@@ -1,0 +1,15 @@
+service : {
+  getQuestion: () -> (text) query;
+  getVotes: () -> (vec record {
+                         text;
+                         nat;
+                       }) query;
+  resetVotes: () -> (vec record {
+                           text;
+                           nat;
+                         });
+  vote: (text) -> (vec record {
+                         text;
+                         nat;
+                       });
+}
